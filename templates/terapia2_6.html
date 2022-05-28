@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapia2_3</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #rec{
+            width:700px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            font-family:'Courier New', Courier, monospace;
+        }
+        
+    </style>
+    <script>
+        function finalizar(){
+            window.open('/menu3','_parent')
+        }
+    </script>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="container" id="rec">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                  <h1>Coordinación general (15 min)</h1>
+                  <br>
+                  <p>Series: 3</p>
+                  <p>Duración por ejercicio: 2m</p>
+                  <p>Secuencia: orden establecido</p>
+                  <p>-Por parejas ejercicios con aros:</p> 
+                  <p>  >> Hacer rodar el aro en el sitio</p> 
+                  <p>  >> Lanzamiento del aro rodando</p>
+                  <p>-Por parejas ejercicios con balones:</p>
+                  <p>  >> Botar el balón</p>
+                  <p>  >> Lanzar el balón rodando</p>
+                  <p>  >> Lanzar el balón por el aire</p>
+                  <button type="button" class="btn btn-info" onclick="finalizar()">Finalizar terapia</button>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

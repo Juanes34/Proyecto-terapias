@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapia5_4</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #rec{
+            width:700px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            font-family:'Courier New', Courier, monospace;
+        }
+        
+    </style>
+    <script>
+        function continuar(){
+            window.open('/terapia5_5','_parent')
+        }
+        function salir(){
+            window.open('/menu2','_parent')
+        }
+    </script>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="container" id="rec">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                  <h1>Ejercicio aeróbico (10 min)</h1>
+                  <br>
+                  <p>Series: 5</p>
+                  <p>Duración por ejercicio: 15s</p>
+                  <p>Intensidad: música a 120 bpm</p>
+                  <p>Secuencia: Respetar orden establecido y descansar entre series</p>
+                  <p>-Realización de movimientos coordinando de brazos y piernas derivados del aerobic</p>
+                  <p>  >> Marchar alrededor</p>
+		        <p>  >> Ubíquese en una posición firme, separe una pierna y llévela a un lado, luego la otra júntela a la primera (similar a un paso lateral) y repita el ejercicio con la pierna contraria</p>
+		        <p> >> Elevar la rodilla hasta tocar con el codo opuesto (o a la máxima extensión)</p>
+                  <button type="button" class="btn btn-info" onclick="continuar()">Continuar</button>
+                  <button type="button" class="btn btn-info" onclick="salir()">Salir</button>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleccion de terapia</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #electerapia{
+            width:700px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            font-family:'Courier New', Courier, monospace;
+        }
+        
+    </style>
+    <script>
+        function terapia1(){
+            window.open('/terapia1','_parent')
+        }
+        function terapia2(){
+            window.open('/terapia2','_parent')
+        }
+        function terapia3(){
+            window.open('/terapia3','_parent')
+        }
+        function terapia4(){
+            window.open('/terapia4','_parent')
+        }
+        function terapia5(){
+            window.open('/terapia5','_parent')
+        }
+        function terapia6(){
+            window.open('/terapia6','_parent')
+        }
+        function terapia7(){
+            window.open('/terapia7','_parent')
+        }
+        function salir(){
+            window.open('/menu2','_parent')
+        }
+    </script>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="container" id="electerapia">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <details>
+                    <summary>Terapia 1</summary>
+                    <br>
+                    <p>Terapia para trabajar en el mejoramiento del equilibrio, disminución de temblores, rigidez y bradicinesia </p>
+                    <p>10 Sesiones en total</p>
+                    <p>Sesiones de 60 minutos</p>
+                    <p>-Calentamiento (10 min)</p>
+                    <p>-Ejercicios de equilibrio (10 min)</p>
+                    <p>-Ejercicios de carga de peso hacia una o otra pierna  (10 min)</p>
+                    <p>-Ejercicios de equilibrio sobre soporte como hule o espuma (10 min)</p>
+		            <p>-Fortalecimiento de cuádriceps e isquiotibiales(10 min)</p>
+                    <p>-Estiramiento (10 min)</p>                                     
+                    <button type="button" class="btn btn-info" onclick="terapia1()">Iniciar</button>
+                </details>
+            </div>
+        </div>
+        <br>
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <details>
+                    <summary>Terapia 2</summary>
+                    <br>
+                    <p>Ejercicios calisténico-recreativos para mejorar la longitud del paso enfocada en movilidad articular y estiramientos</p>
+                    <p>10 Sesiones en total</p>
+                    <p>Sesiones de 45 minutos</p>
+                    <p>-Calentamiento (10 min)</p>
+                    <p>-Estiramiento (5 min)</p>			
+                    <p>-Movilidad articular (10 min)</p>
+                    <p>-Estiramiento (5 min)</p>
+                    <p>-Coordinación general (15 min)</p>
+                    <button type="button" class="btn btn-info" onclick="terapia2()">Iniciar</button>
+                </details>
+            </div>
+          </div>
+          <br>
+          <div class="card bg-info text-white">
+            <div class="card-body">
+                <details>
+                    <summary>Terapia 3</summary>
+                    <br>
+                    <p>Ejercicios calisténico-recreativo para mejorar la velocidad de la marcha, enfocados en la agilidad y el fortalecimiento de grupos musculares de los pies, las pantorrillas, entre otros</p>
+                    <p>10 Sesiones en total</p>
+                    <p>Sesiones de 45 minutos</p>
+                    <p>-Calentamiento (10 min)</p>
+                    <p>-Movilidad articular (5 min)</p>
+                    <p>-Ejercicio aeróbico (10 min)</p>
+                    <p>-Coordinación general (15 min)</p>
+                    <p>-Estiramiento (5 min)</p>                                     
+                    <button type="button" class="btn btn-info" onclick="terapia3()">Iniciar</button>
+                </details>
+            </div>
+          </div>
+          <br>
+          <div class="card bg-info text-white">
+            <div class="card-body">
+                <details>
+                    <summary>Terapia 4</summary>
+                    <br>
+                    <p>Terapia de ejercicios caliténico-recreativos combinados con ejercicios del equilibrio para mejorar estabilidad al caminar y longitud de paso </p>
+                    <p>10 Sesiones en total</p>
+                    <p>Sesiones de 50 minutos</p>
+                    <p>-Calentamiento (10 min)</p>
+                    <p>-Ejercicios de estiramiento (10 min)</p>
+                    <p>-Movilidad articular (10 min)</p>
+                    <p>-Ejercicios de equilibrio (10 min)</p>
+		            <p>-Coordinación general (10 min)</p>                                                       
+                    <button type="button" class="btn btn-info" onclick="terapia4()">Iniciar</button>
+                </details>
+            </div>
+          </div>
+          <br>
+          <div class="card bg-info text-white">
+            <div class="card-body">
+                <details>
+                    <summary>Terapia 5</summary>
+                    <br>
+                    <p>Terapia de ejercicios caliténico-recreativos combinados con ejercicios del equilibrio para mejorar estabilidad al caminar, cadencia y velocidad de la marcha </p>
+                    <p>10 Sesiones en total</p>
+                    <p>Sesiones de 40 minutos</p>
+                    <p>-Calentamiento (10 min)</p>
+                    <p>-Ejercicios de equilibrio (15 min)</p>
+                    <p>-Ejercicio aeróbico (10 min)</p>
+                    <p>-Estiramiento (5 min)</p>                                                      
+                    <button type="button" class="btn btn-info" onclick="terapia5()">Iniciar</button>
+                </details>
+            </div>
+          </div>
+          <br>
+          <div class="card bg-info text-white">
+            <div class="card-body">
+                <details>
+                    <summary>Terapia 6</summary>
+                    <br>
+                    <p>Terapia de ejercicios caliténico-recreativos para aumentar longitud del paso, cadencia y velocidad de la marcha </p>
+                    <p>10 Sesiones en total</p>
+                    <p>Sesiones de 45 minutos</p>
+                    <p>-Calentamiento (10 min)</p>
+                    <p>-Movilidad articular (5 min)</p>
+                    <p>-Ejercicio de estiramiento(5 min)</p>
+                    <p>-Entrenamiento funcional  (15 min)</p> 
+		            <p>-Coordinación general  (10 min)</p>                                                        
+                    <button type="button" class="btn btn-info" onclick="terapia6()">Iniciar</button>
+                </details>
+            </div>
+          </div>
+          <br>
+          <div class="card bg-info text-white">
+            <div class="card-body">
+                <details>
+                    <summary>Terapia 7</summary>
+                    <br>
+                    <p>Combinación tratamiento fisioterapéutico especifico para EP, ejercicios calisténico-recreativos y tai chi para aumentar longitud de paso, cadencia, velocidad de la marcha y equilibrio al caminar</p>
+                    <p>10 Sesiones en total</p>
+                    <p>Sesiones de 90 minutos</p>
+                    <p>-Actividades cardiovasculares (5 min)</p>
+                    <p>-Estiramiento (15 min)</p>
+                    <p>-Fuerza en contexto funcional (15 min)</p>
+                    <p>-Entrenamiento funcional  (15 min)</p> 
+                    <p>-Entrenamiento de la marcha  (15 min)</p> 
+                    <p>-Entrenamiento equilibrio TAI CHI (15 min)</p> 
+                    <p>-Ejercicios de relajación  (10 min)</p>                                                        
+                    <button type="button" class="btn btn-info" onclick="terapia7()">Iniciar</button>
+                </details>
+            </div>
+          </div>
+          <br>
+          <div class="card bg-info text-white">
+            <div class="card-body">
+                <button type="button" class="btn btn-info" onclick="salir()">Salir</button>
+            </div>
+          </div>
+      </div>

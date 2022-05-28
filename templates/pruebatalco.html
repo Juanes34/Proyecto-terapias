@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba talco</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function cont(){
+            zanr=document.getElementById("zanr").value;
+            zanl=document.getElementById("zanl").value;
+            if ((zanr=="") || (zanl=="")){
+                alert("Ingrese todos los valores");
+            }
+            else{
+                document.getElementById("formtalco").submit()
+            }
+        }
+    </script>
+    <style>
+        #talco{
+            width:700px;
+            position: absolute;
+            left: 27%;
+            top: 30%;
+            background-color:rgba(255, 255, 255, 0.76);
+            font-family:'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="card" id="talco">
+        <div class="card-body">
+            <form action="/pruebavel" method="post" id="formtalco">
+                <h1>Prueba de zancada</h1>
+                <p>Con el objetivo de establecer la longitud de zancada para pierna izquierda y derecha</p>
+                <br>
+		        <p>Para esta prueba necesitará talco, si no dispone del mismo podrá usar cualquier cosa que deje una huella completamente marcada en el piso o sobre un papel</p>
+                <p>Esparza un poco de talco en el piso y frote sus pies sobre el mismo hasta que la planta de los pies quede completamente recubierta por el talco</p>
+		        <p>Camine durante determinada distancia de manera que de varios pasos y mida la distancia entre contactos de talón para cada pie (cm)</p>
+		        <p>Entiendase el término contacto de talón como cada vez que el talón toca el suelo</p>
+		        <p>Registre de manera independiente las medidas tomadas para el pie derecho e izquiero</p>
+                <p class="parrafo">Longitud de zancada pierna derecha: <input type="number" name="zanr" id="zanr"></p>
+                <p class="parrafo">Longitud de zancada pierna izquierda: <input type="number" name="zanl" id="zanl"></p>
+                <p><button type="button" class="btn btn-info" onclick="cont()">Continuar</button></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

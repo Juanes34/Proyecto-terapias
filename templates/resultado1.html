@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #rec{
+            width:700px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            font-family:'Courier New', Courier, monospace;
+        }
+        
+    </style>
+    <script>
+        function continuar(){
+            window.open('/recomen11','_parent')
+        }
+        function salir(){
+            window.open('/menu2','_parent')
+        }
+    </script>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="container" id="rec">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                  <h1>Resultados guardados</h1>
+                  <br>
+                  <p>Longitud de zancada pierna derecha: {{zanr}} cm</p>
+                  <p>Longitud de zancada pierna izquierda: {{zanl}} cm</p>
+                  <p>Velocidad de marcha: {{vel2}} cm/s</p>
+                  <p>Genero: {{genero22}}</p>
+                  <p>Edad: {{edad22}}</p>
+                  <p>Caidas: {{caidas2}}</p>
+                  <button type="button" class="btn btn-info" onclick="continuar()">Iniciar</button>
+                  <button type="button" class="btn btn-info" onclick="salir()">Salir</button>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

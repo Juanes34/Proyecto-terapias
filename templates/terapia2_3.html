@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapia2_3</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #rec{
+            width:700px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            font-family:'Courier New', Courier, monospace;
+        }
+        
+    </style>
+    <script>
+        function continuar(){
+            window.open('/terapia2_4','_parent')
+        }
+        function salir(){
+            window.open('/menu2','_parent')
+        }
+    </script>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="container" id="rec">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                  <h1>Estiramiento (5 min)</h1>
+                  <br>
+                  <p>Series: 4</p>
+                  <p>Repeticiones: 5 por ejercicio</p>
+                  <p>Duración por ejercicio: 15s</p>
+                  <p>-Sentado en una silla, abrir las piernas en su máximo y sostener con las manos sin lastimarse, cerrar acabados 15 segundos cerrar lentamente</p>
+                  <p>-Sentado en una silla, extender los brazos hacia arriba e inclinarse hacia el costado derecho en su máximo y sostener con las manos sin lastimarse, retornar a la posición inicial y repetir hacia la otra dirección</p>
+                  <button type="button" class="btn btn-info" onclick="continuar()">Continuar</button>
+                  <button type="button" class="btn btn-info" onclick="salir()">Salir</button>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

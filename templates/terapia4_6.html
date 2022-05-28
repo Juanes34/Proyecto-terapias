@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapia4_6</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #rec{
+            width:700px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            font-family:'Courier New', Courier, monospace;
+        }
+        
+    </style>
+    <script>
+        function finalizar(){
+            window.open('/menu3','_parent')
+        }
+
+        
+    </script>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="container" id="rec">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+            <h1>Coordinación general (15 min)</h1>
+                  <br>
+                  <p>Series: 3</p>
+                  <p>Duración por ejercicio: 60s</p>
+                  <p>Secuencia: Respetar orden establecido y descansar entre series</p>
+                  <p>-Por parejas ejercicios con aros: hacer rodar el aro en el sitio</p>
+                  <p>-Por parejas ejercicios con aros: lanzar el aro rodando al compañero de enfrente</p>
+	              <p>-Por parejas ejercicios con balones: botar el balón de un lado a otro </p>
+		          <p>-Por parejas ejercicios con balones: lanzar rodando el balón de un lado a otro </p>
+	              <p>-Por parejas ejercicios con balones: lanzar el balón por el aire de un lado a otro </p>
+                  <button type="button" class="btn btn-info" onclick="finalizar()">Finalizar terapia</button>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

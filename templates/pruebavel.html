@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba vel</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function cont(){
+            tiempo=document.getElementById("tiempo").value;
+            distancia=document.getElementById("distancia").value;
+            if ((tiempo=="")){  
+                alert("Ingrese todos los valores");
+            }
+            else{
+                document.getElementById("formvel").submit()
+            }
+        }
+    </script>
+    <style>
+        #vel{
+            width:700px;
+            position: absolute;
+            left: 27%;
+            top: 30%;
+            background-color:rgba(255, 255, 255, 0.76);
+            font-family:'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="card" id="vel">
+        <div class="card-body">
+            <form action="/pruebaca2" method="post" id="formvel">
+                <h1>Prueba de velocidad</h1>
+                <p>Con el objetivo de establecer la velocidad de la marcha</p>
+                <br>
+                <p>Utilice un metro para establecer la distancia que va a caminar, para facilitar el cálculo de la velocidad puede utilizar cinta para marcar el inicio y el final del tramo a caminar</p>
+                <p>Ubiquese dos pasos atrás de la línea de inicio y camine hacia al frente. Inicie el cronometro al pasar por la línea de inicio y registre el tiempo que tarda en llegar hasta la línea de meta</p>               
+                <p>Tenga presente que no existe un tiempo establecido que debe tardar en el recorrido. Camine con normalidad y al finalizar ingrese la distancia recorrida (cm) y el tiempo (s)</p>
+                <p class="parrafo">Distancia(cm): <input type="number" name="distancia" id="distancia"></p>
+                <p class="parrafo">Tiempo(s): <input type="number" name="tiempo" id="tiempo"></p>
+                <p><button type="button" class="btn btn-info" onclick="cont()">Continuar</button></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

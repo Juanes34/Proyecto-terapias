@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <style>
+        #est{
+            width:700px;
+            position: absolute;
+            left: 27%;
+            top: 30%;
+            background-color:rgba(255, 255, 255, 0.76);
+            font-family:'Courier New', Courier, monospace;
+            text-align: center;
+            }
+  </style>
+    <script>
+        function volver(){
+            window.open('/hist','_parent')
+        }
+    </script>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="container" id="est">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <h1>Estado {{elec}}</h1>
+                <p>Longitud de zancada pierna derecha: {{zand}} cm</p>
+                <p>Longitud de zancada pierna izquierda: {{zani}} cm</p>
+                <p>Velocidad de marcha: {{v}} cm/s</p>
+                <p>Genero: {{g}}</p>
+                <p>Edad: {{a}}</p>
+                <p>Caidas: {{f}}</p>
+                <button type="submit" class="btn btn-info" value="elegido" onclick="volver()">Volver</button>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function sig(){
+            uno=document.getElementById("uno").value;
+            dos=document.getElementById("dos").value;
+            if ((uno=="") || (dos=="")){
+                alert("Ingrese todos los valores");
+            }
+            else{
+                document.getElementById("formenc").submit()
+            }
+        }
+    </script>
+    <style>
+        #encuesta{
+            width:700px;
+            position: absolute;
+            left: 27%;
+            top: 30%;
+            background-color:rgba(255, 255, 255, 0.76);
+            font-family:'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="card" id="encuesta">
+        <div class="card-body">
+            <form action="/resultado" method="post" id="formenc">
+                <h1>Información personal</h1>
+                <p>Con el objetivo de escoger la mejor terapia para ti</p>
+                <p class="parrafo">Género<br><select name="uno" id="uno">
+                    <option value="0">Hombre</option>
+                    <option value="1">Mujer</option>
+                </select></p>
+                <p class="parrafo">Edad<br><select name="dos" id="dos">
+                    <option value="1">Menor a 65</option>
+                    <option value="2">65-69</option>
+                    <option value="3">70-74</option>
+                    <option value="4">75-79</option>
+                    <option value="5">Mayor a 80</option>
+                </select></p>
+                <p><button type="button" class="btn btn-info" onclick="sig()">Siguiente</button></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

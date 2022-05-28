@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba caidas</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function cont(){
+            caidas2=document.getElementById("caidas2").value;
+            if ((caidas2=="")){
+                alert("Ingrese todos los valores");
+            }
+            else{
+                document.getElementById("forminfo").submit()
+            }
+        }
+    </script>
+    <style>
+        #caida{
+            width:700px;
+            position: absolute;
+            left: 27%;
+            top: 30%;
+            background-color:rgba(255, 255, 255, 0.76);
+            font-family:'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="card" id="caida">
+        <div class="card-body">
+            <form action="/encuesta2" method="post" id="forminfo">
+                <h1>Prueba de caidas</h1>
+                <p>Con el objetivo de establecer la estabilidad y la probabilidad de caidas</p>
+                <br>
+                <p>Necesita disponer de una silla sin brazos, preferiblemente con una altura de asiento de 43cm</p>
+		        <p>Apoye la silla contra la pared para evitar accidentes durante la prueba</p>
+	 	        <p>Sientese con la espalda recta, pies separados aproximadamente al ancho de los hombros y colocados en el suelo en un ángulo ligeramente hacia atrás desde las rodillas, ubique un pie ligeramente delante del otro para ayudar a mantener el equilibrio</p>
+                <p>Ubique cada mano sobre el hombro contrario</p>
+ 		        <p>Registre el número de veces que pueda pararse y sentarse durante 30 segundos sin ningún tipo de apoyo</p>
+		        <p>Si necesita apoyo externo o la ayuda de las manos para realizar la actividad ponga 0 en este parámetro</p>
+                <p class="parrafo">Ingrese el valor: <input type="number" name="caidas2" id="caidas2"></p>
+                <p><button type="button" class="btn btn-info" onclick="cont()">Continuar</button></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

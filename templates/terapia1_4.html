@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapia1_4</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #rec{
+            width:700px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            font-family:'Courier New', Courier, monospace;
+        }
+        
+    </style>
+    <script>
+        function finalizar(){
+            window.open('/menu3','_parent')
+        }
+
+        
+    </script>
+</head>
+<body style="background-image: url('/static/dos.jpg');">
+    <div class="container" id="rec">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                  <h1>Estiramiento (10 min)</h1>
+                  <br>
+                  <p>Series: 4</p>
+                  <p>Duración por ejercicio:Variable</p>
+                  <p>Secuencia: orden establecido</p>
+                  <p>-Uso de soportes que den inestabilidad al paciente como hule espuma, sobre el que se realicen ejercicios de rotación del tronco y de la cabeza con los ojos abiertos estimula propiocepción</p>
+                  <p>-Descanso de 1 minuto</p>
+		        <p>-Sentado en una silla, elevar los talones lentamente de manera asíncrona realice 10 repeticiones por serie</p>
+		        <p>-Ejercicios con los que se sienta cómodo para el estiramiento de los brazos</p>
+                  <button type="button" class="btn btn-info" onclick="finalizar()">Finalizar terapia</button>
+                  
+            </div>
+        </div>
+      </div>
+</body>
+</html>
